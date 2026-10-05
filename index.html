@@ -1,0 +1,360 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsZone - Sports Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🏆 SportsZone</h1>
+        <p>Your Ultimate Sports & Games Blog</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#sports">Sports</a>
+        <a href="#about">About</a>
+        <a href="#contact">Write a Blog</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to SportsZone</h2>
+            <p>
+                Discover the latest news, stories and interesting facts
+                from the world of sports.
+            </p>
+            <button onclick="scrollToSports()">Explore Sports</button>
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section id="sports" class="sports-section">
+
+        <h2>Popular Sports</h2>
+        <p class="section-text">
+            Explore different sports from around the world.
+        </p>
+
+        <div class="sports-container">
+
+            <!-- Cricket -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da"
+                     alt="Cricket">
+                <div class="card-content">
+                    <h3>🏏 Cricket</h3>
+                    <p>
+                        Cricket is one of the most popular sports,
+                        especially in India and many other countries.
+                    </p>
+                    <button onclick="showSport('Cricket')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Football -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55"
+                     alt="Football">
+                <div class="card-content">
+                    <h3>⚽ Football</h3>
+                    <p>
+                        Football is a globally popular team sport
+                        played by millions of fans.
+                    </p>
+                     <button onclick="showSport('Football')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Basketball -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc"
+                     alt="Basketball">
+                <div class="card-content">
+                    <h3>🏀 Basketball</h3>
+                    <p>
+                        Basketball is a fast-paced sport that requires
+                        teamwork, speed and accuracy.
+                    </p>
+                     <button onclick="showSport('Basketball')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Tennis -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1595435934249-5df7ed86e1c0"
+                     alt="Tennis">
+                <div class="card-content">
+                    <h3>🎾 Tennis</h3>
+                    <p>
+                        Tennis is an exciting racket sport played
+                        between two players or teams.
+                    </p>
+                    <button onclick="showSport('Tennis')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Badminton -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1626224583764-f87db24ac4ea"
+                     alt="Badminton">
+                <div class="card-content">
+                    <h3>🏸 Badminton</h3>
+                    <p>
+                        Badminton is a popular indoor racket sport
+                        requiring speed and quick reactions.
+                    </p>
+                    <button onclick="showSport('Badminton')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Formula Racing -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+                     alt="Formula Racing">
+                <div class="card-content">
+                    <h3>🏎️ Formula Racing</h3>
+                    <p>
+                        Formula racing combines speed, technology
+                        and professional driving skills.
+                    </p>
+                    <button onclick="showSport('Formula Racing')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Swimming -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1530549387789-4c1017266635"
+                     alt="Swimming">
+                <div class="card-content">
+                    <h3>🏊 Swimming</h3>
+                    <p>
+                        Swimming is a competitive water sport that
+                        develops strength and endurance.
+                    </p>
+                    <button onclick="showSport('Swimming')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Boxing -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed"
+                     alt="Boxing">
+                <div class="card-content">
+                    <h3>🥊 Boxing</h3>
+                    <p>
+                        Boxing is a combat sport focused on fitness,
+                        technique and controlled competition.
+                    </p>
+                    <button onclick="showSport('Boxing')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Volleyball -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1"
+                     alt="Volleyball">
+                <div class="card-content">
+                    <h3>🏐 Volleyball</h3>
+                    <p>
+                        Volleyball is a team sport where players
+                        work together to score points.
+                    </p>
+                    <button onclick="showSport('Volleyball')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Table Tennis -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900"
+                     alt="Table Tennis">
+                <div class="card-content">
+                    <h3>🏓 Table Tennis</h3>
+                    <p>
+                        Table tennis is a fast racket sport requiring
+                        quick reflexes and precision.
+                    </p>
+                    <button onclick="showSport('Table Tennis')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Archery -->
+            <div class="sport-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSddhg-vhBz_Co12GrV6Wj2K3xvDJSbB4bblpUdP1YLw&s=10"
+                     alt="Archery">
+                <div class="card-content">
+                    <h3>🏹 Archery</h3>
+                    <p>
+                        Archery is a precision sport that requires
+                        concentration and accuracy.
+                    </p>
+                    <button onclick="showSport('Archery')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Wrestling -->
+            <div class="sport-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNUfWk8I7v-R2OVeSpJyiKj522OvSGwji1CkYVFxihDQ&s=10"
+                     alt="Wrestling">
+                <div class="card-content">
+                    <h3>🤼 Wrestling</h3>
+                    <p>
+                        Wrestling is a competitive sport involving
+                        strength, technique and discipline.
+                    </p>
+                    <button onclick="showSport('Wrestling')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Hockey -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1580748141549-71748dbe0bdc"
+                     alt="Hockey">
+                <div class="card-content">
+                    <h3>🏑 Hockey</h3>
+                    <p>
+                        Hockey is a fast team sport played using
+                        sticks and a ball.
+                    </p>
+                    <button onclick="showSport('Hockey')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Athletics -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5"
+                     alt="Athletics">
+                <div class="card-content">
+                    <h3>🏃 Athletics</h3>
+                    <p>
+                        Athletics includes running, jumping and
+                        throwing competitions.
+                    </p>
+                    <button onclick="showSport('Athletics')">Read More</button>
+                </div>
+            </div>
+
+            <!-- Golf -->
+            <div class="sport-card">
+                <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b"
+                     alt="Golf">
+                <div class="card-content">
+                    <h3>🏌️ Golf</h3>
+                    <p>
+                        Golf is a precision sport played on courses
+                        using different clubs.
+                    </p>
+                    <button onclick="showSport('Golf')">Read More</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About SportsZone</h2>
+
+        <p>
+            SportsZone is a simple sports blogging website created
+            for sports lovers. Our website covers cricket, football,
+            basketball, tennis, badminton and many other sports.
+        </p>
+    </section>
+
+    <!-- Blog Form -->
+    <section id="contact" class="contact">
+
+        <h2>Write Your Own Sports Blog</h2>
+
+        <form id="blogForm" onsubmit="return validateForm()">
+
+            <label for="name">Name</label>
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email">
+
+            <label for="title">Blog Title</label>
+            <input type="text"
+                   id="title"
+                   placeholder="Enter your blog title">
+
+            <label for="sport">Select Sport</label>
+
+            <select id="sport">
+                <option value="">-- Select Sport --</option>
+                <option>Cricket</option>
+                <option>Football</option>
+                <option>Basketball</option>
+                <option>Tennis</option>
+                <option>Badminton</option>
+                <option>Formula Racing</option>
+                <option>Swimming</option>
+                <option>Boxing</option>
+                <option>Volleyball</option>
+                <option>Table Tennis</option>
+                <option>Archery</option>
+                <option>Wrestling</option>
+                <option>Hockey</option>
+                <option>Athletics</option>
+                <option>Golf</option>
+            </select>
+
+            <label for="content">Blog Content</label>
+
+            <textarea id="content"
+                      rows="7"
+                      placeholder="Write your sports blog here..."></textarea>
+
+            <button type="submit">Submit Blog</button>
+
+            <p id="message"></p>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>🏆 SportsZone</h3>
+        <p>© 2026 SportsZone | All Rights Reserved</p>
+    </footer>
+    <!-- Sport Information Popup -->
+
+<div id="sportModal" class="modal">
+
+    <div class="modal-content">
+
+        <span class="close" onclick="closeSport()">&times;</span>
+
+        <h2 id="sportTitle"></h2>
+
+        <p id="sportDescription"></p>
+
+        <div class="sport-info">
+            <p><strong>Origin:</strong> <span id="sportOrigin"></span></p>
+            <p><strong>Players:</strong> <span id="sportPlayers"></span></p>
+            <p><strong>Equipment:</strong> <span id="sportEquipment"></span></p>
+            <p><strong>Objective:</strong> <span id="sportObjective"></span></p>
+        </div>
+
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
